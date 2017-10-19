@@ -1,7 +1,8 @@
 //Constructor Function
-var profileHome = function (firstname, lastname, picture, projects){
-  this.firstName = firstname;
-  this.lastName = lastname;
+var profileHome = function (about, contact, picture, work, gallery){
+  this.about = about;
+  this.contact = contact;
   this.img = picture;
-  this.projects = projects;
+  this.work = work;
+  this.gallery = gallery;
 }
