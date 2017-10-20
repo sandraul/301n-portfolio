@@ -6,3 +6,7 @@ var profileHome = function (about, contact, picture, work, gallery){
   this.work = work;
   this.gallery = gallery;
 }
+
+var home {
+  
+}
