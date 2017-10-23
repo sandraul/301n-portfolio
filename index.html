@@ -1,61 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <title>Portfolio</title>
-    <meta name="" content="">
+    <title>Sandra Ultreras Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/icons.css">
+    <!-- <link rel="stylesheet" href="styles/icons.css">
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/modules.css">
-    <link rel="icon" href="image/iconName" href="link">
+    <link rel="icon" href="image/iconName" href="link"> -->
+    <script src="js/jquery-3.2.1.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700" rel="stylesheet">
   </head>
   <body>
     <header>
-      <section>
-        <div class="">Logo/Initials</div>
-      </section>
-      <nav>
-        <!-- Not sure if i want a hamburger menu -->
+      <div id="logo"><a href="index.html" target="_self">SU</a></div>
+      <nav id="navigation">
         <ul>
-          <li><a href="#" data-tab="about">About</a></li>
-          <li>Contact</li>
+          <li><a href="index.html" target="_self">About</a></li>
+          <li><a href="#" target="_self">Contact</a></li>
         </ul>
       </nav>
+      <div id="hamburger-menu"><a id="showMenu" href="#"></a></div>
+      <div id="social-media">
+        <a class="soc" href="https://github.com/sandraul" target="_blank"><img src="images/social/github.png"></a>
+        <a class="soc" href="https://www.linkedin.com/in/sandra-ultreras" target="_blank"><img src="images/social/linkedin.png"></a>
+      </div>
     </header>
-    
-    <main>
-      <section>
-        LANDING PAGE
-        <p>welcome to Sandra Ultreras portfolio</p>
+
+    <main id="container">
+      <section id="landing-page">
+        <h1>LANDING PAGE</h1>
+        <p>The portfolio of Sandra Ultreras,
+          an independent interactive designer based in Portland, OR</p>
       </section>
-      <section>
-        HOME PAGE
+
+      <section id="home-page">
+        <h1>HOME PAGE</h1>
+        <p>Add a banner here</p>
+        <div id="work-menu">
+          <h4>Selected Work</h4>
+          <button type="button" name="button">work 1</button>
+          <button type="button" name="button">work 2</button>
+          <button type="button" name="button">work 3</button>
+        </div>
+        <div id="bio">
+          <h4>Who I am</h4>
+          <p>TEXTtextTexT TEXTtextTexT TEXTtextTexTTEXTtextTexTTEXTtextTexTTEXTtextTexT TEXTtextTexT </p>
+          <h4>Skills</h4>
+          <p>TEXTtextTexT, TEXTtextTexT, TEXTtextTexT, TEXTtextTexT, TEXTtextTexT</p>
+        </div>
       </section>
-      <section>
-        <article class="">
-          <h1>Work title</h1>
-          <div class="">
+
+      <!-- Works template page -->
+      <section id="work-page">
+          <h1>WORKS PAGE TEMPLATE</h1>
+          <div id="description">
+            <h4>Work Title</h4>
             <p>Description</p>
-            <br>
+            <p>Goals</p>
             <p>Role</p>
-            <br>
             <p>Year</p>
-            <br>
-            <p>link</p>
-            <br>
-            <div class="">
-
-            </div>
-            <div class="">
-
-            </div>
-            <div class="">
-
-            </div>
+            <a href="#">See online</a>
           </div>
-        </article>
-      </section>
+          <div id="screenshot">
+            <a href="#">
+              <img id="" src="images/DSCN1583.JPG" height="200px" alt="">
+            </a>
+          </div>
+          <div id="video-flow">
+            <a href="#">
+              <img id="" src="images/DSCN1583.JPG" height="200px" alt="">
+            </a>
+          </div>
+          <div id="displays">
+            <a href="#">
+              <img id="" src="images/DSCN1583.JPG" height="200px" alt="">
+            </a>
+          </div>
+        </section>
     </main>
+    <script src="scripts/app.js"></script>
+    <script src="script/appData.js"></script>
   </body>
 </html>
