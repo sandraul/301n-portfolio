@@ -1,3 +1,4 @@
+
 #Sandra Ultreras - 301 Portfolio
 
 This is my portfolio for Class 301 at Alchemy Code Lab
@@ -33,3 +34,4 @@ Set images max-width to containers width
 Portfolio works template in place
 Minor change to app.js
 Download handlebars.js
+
