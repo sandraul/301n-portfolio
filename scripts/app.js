@@ -1,7 +1,7 @@
 'use strict'
 
 //Constructor Function
-var Portfolio = function (portfolio) {
+function = Portfolio (portfolio) {
   this.title = title;
   this.description = description;
   this.role = role;

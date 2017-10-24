@@ -1,0 +1,9 @@
+@media (max-width: 450px) {
+  header {
+    float: right;
+    font-size: 120%;
+    text-align: right;
+    padding: 10px 100px;
+
+  }
+}
