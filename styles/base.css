@@ -1,11 +1,13 @@
+@import 'icons.css';
+/*@import 'layout.css';*/
+@import 'modules.css';
+
 body {
   line-height: 1.5;
   font-size: 100%;
-  color: #313131;
-}
-
-img {
-  max-width: 100%;
+  color: black;
+  margin: 0 auto;
+  width: 100%;
 }
 
 

@@ -1,0 +1,90 @@
+/*  -------- Media Queries ------- */
+
+
+
+
+
+
+
+/*  -------- Starter Code Example ------- */
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.heading-group-h1 {
+  max-width: 80%;
+}
+
+#filters select {
+  width: 90%;
+  margin: .2em 5%;
+}
+
+/* REVIEW: Add styles so the filters lay out better on desktop. */
+@media only screen and (min-width: 640px) {
+  .heading-group-h1 {
+    padding: .1em .1em .1em 2em;
+    float: none;
+  }
+
+  #filters select {
+    width: 15em;
+    margin: .2em .2em;
+  }
+
+  #filters li {
+    width: 20em;
+    display: inline;
+  }
+}
+
+
+
+/* Mobile */
+/*@media only screen and (max-width: 653px) and (min-width: 320px) {
+
+    .icon-menu {
+      display: none;
+    }
+    .main-nav li {
+      decoration: none;
+      padding: 10px 10px;
+      display: inline-block;
+    }
+}*/
+
+/* Tablet */
+/*@media only screen and (max-width: 1280px) and (min-width: 653px) {
+
+  .icon-menu {
+    display: none;
+  }
+  .main-nav li {
+    decoration: none;
+    padding: 10px 10px;
+    display: inline-block;
+  }
+}*/
+
+/* Desktop */
+/*@media only screen and (max-width: 9000px) and (min-width: 1280px) {
+
+  .icon-menu {
+    display: none;
+  }
+  .main-nav li {
+    decoration: none;
+    padding: 10px 10px;
+    display: inline-block;
+  }
+}*/

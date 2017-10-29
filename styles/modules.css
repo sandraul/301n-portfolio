@@ -1,9 +1,45 @@
-@media (max-width: 450px) {
-  header {
-    float: right;
-    font-size: 120%;
-    text-align: right;
-    padding: 10px 100px;
+.icon-menu {
+  float: right;
+  margin: 20px;
+  font-size: 150%;
+   /*position: absolute;*/
+   /*right: 0px;*/
+ }
 
-  }
+.image-show {
+   width: 100%;
+}
+
+.template {
+  display: none;
+}
+
+.main-nav {
+  height: 50px;
+}
+
+.main-nav ul {
+  /*width: 100%;*/
+  display: none;
+  /*decoration: none;*/
+  padding: 0;
+  list-style: none;
+  clear: both;
+}
+
+.main-nav:hover ul {
+  display: block;
+}
+
+.main-nav li {
+  float: right;
+  margin-right: .4em;
+  font-size: 1.5em;
+  padding: .5em .2em;
+  border-bottom: 1px solid #ccc;
+}
+
+.main-nav #logo {
+  float: left;
+  display: inline-block;
 }
