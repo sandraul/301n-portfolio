@@ -33,3 +33,12 @@ Set images max-width to containers width
 Portfolio works template in place
 Minor change to app.js
 Download handlebars.js
+
+10/24
+
+Added meta tag
+Added link tag for icons
+Simplified the layout for the project
+Added fonts folder with icomoon files
+Constructor function done
+Importing data into work template works
