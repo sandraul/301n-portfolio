@@ -8,4 +8,18 @@ var portfolioData = [
     description: "<p>This is my first work. 2008</p>",
     link: "http://www.ancestroproducts.com",
   },
+
+  {
+    image: "images/work2.jpg",
+    title: "Hacienda CDC",
+    description: "<p>This is my second work. 2012</p>",
+    link: "http://www.haciendacdc.com",
+  },
+
+  {
+    image: "images/work3.jpg",
+    title: "Eat.Think.Grow",
+    description: "<p>This is my third work. 2016</p>",
+    link: "http://www.eatthinkgrow.org",
+  },
 ];
