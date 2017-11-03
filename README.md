@@ -43,3 +43,11 @@ Simplified the layout for the project
 Added fonts folder with icomoon files
 Constructor function done
 Importing data into work template works
+
+10/29
+
+Added two more work data examples
+
+11/2
+
+Added mailto link on html contact tab
