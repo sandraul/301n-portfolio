@@ -51,3 +51,5 @@ Added two more work data examples
 11/2
 
 Added mailto link on html contact tab
+Added clearfix for header
+Added function for event handlebars 
