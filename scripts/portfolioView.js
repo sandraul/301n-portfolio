@@ -32,7 +32,7 @@ portfolioView.handleTabs = function() {
     $('.icon-cross').click();
   });
   $('.tab-content').hide();
-  $('#main').fadeIn(1000);
+  $('#projects').fadeIn(1000);
 }
 
 
