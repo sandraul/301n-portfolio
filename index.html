@@ -13,8 +13,9 @@
       <nav class="main-nav">
         <div id="logo"><a href="#" target="_self">SU</a></div>
         <div class="icon-menu"></div>
-        <div class="icon-close">X</div> <!--find an icon to place here -->
+        <div class="icon-cross"></div>
         <ul>
+          <li class="tab" data-content="main"><a href="#">Projects</a></li>
           <li class="tab" data-content="about"><a href="#">About</a></li>
           <li><a href="mailto:sandraultreras@gmail.com" target="_top">Contact</a></li>
           <li><a href="https://github.com/sandraul" target="_blank"  class="icon-github"></a></li>
@@ -24,26 +25,28 @@
     </header>
 
 <!-- jQuery Works template page -->
-      <section id="main" class="content">
+      <section id="main" class="tab-content">
         <h1>Projects</h1>
         <div class="work-container">
             <article class="template">
               <img class="image-show" src="">
               <a href="#" class="title-link">Link</a>
+              <!-- <a href="#" class="title-link"><img class="image-show" src=""></a> -->
               <div class="description">Description</div>
             </article>
           </div>
       </section>
 
 <!-- about section -->
-<section id="about" class="content">
-  <div id="about-container">
-    <h4>Bio:</h4>
-    <p>TEXTtextTexT TEXTtextTexT TEXTtextTexTTEXTtextTexTTEXTtextTexTTEXTtextTexT TEXTtextTexT </p>
-    <h4>Skills:</h4>
-    <p>TEXTtextTexT, TEXTtextTexT, TEXTtextTexT, TEXTtextTexT, TEXTtextTexT</p>
-  </div>
-</section>
+    <section id="about" class="tab-content">
+      <div id="about-container">
+        <h4>Bio:</h4>
+          <p>TEXTtextTexT TEXTtextTexT TEXTtextTexTTEXT
+            textTexTTEXTtextTexTTEXTtextTexT TEXTtextTexT </p>
+        <h4>Skills:</h4>
+          <p>TEXTtextTexT, TEXTtextTexT, TEXTtextTexT, TEXTtextTexT, TEXTtextTexT</p>
+      </div>
+    </section>
 
 
 <script src="vendor/jquery-3.2.1.js"></script>
