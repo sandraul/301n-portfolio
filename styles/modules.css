@@ -7,6 +7,15 @@
    /*right: 0px;*/
  }
 
+.icon-cross {
+  float: right;
+  margin: 20px;
+  font-size: 200%;
+  padding-bottom: 10px;
+  position: relative;
+  display: none;
+}
+
 section h1 {
   padding-left: 20px;
   padding-top: 80px;
