@@ -1,0 +1,36 @@
+@import 'icons.css';
+/*@import 'layout.css';*/
+@import 'modules.css';
+
+body {
+  /*line-height: 1.5;*/
+  /*font-size: 100%;*/
+  color: #EDE7D9;
+  background-color: #1C373A;
+  /*margin: 0 auto;*/
+  /*width: 100%;*/
+}
+
+
+/*TEXT STYLES
+=======================================*/
+
+p {
+  font-size: 1em;
+}
+
+/*LINK STYLES
+=======================================*/
+
+a, a:link, a:active {
+  text-decoration: none;
+  color: #D5A021;
+}
+
+a:hover, a:focus {
+  color: #736B60;
+}
+
+a:visited {
+  color: #A49694;
+}
