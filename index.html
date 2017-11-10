@@ -5,7 +5,8 @@
     <title>Sandra Ultreras Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="styles/base.css">
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700" rel="stylesheet">
   </head>
   <body>
@@ -15,6 +16,7 @@
         <div class="icon-menu"></div>
         <div class="icon-cross"></div>
         <ul>
+          <li class="tab" data-content="icon-home" ><a href="#"><i class="icon-point-up"></i></a>
           <li class="tab" data-content="projects"><a href="#">Projects</a></li>
           <li class="tab" data-content="about"><a href="#">About</a></li>
           <li><a href="mailto:sandraultreras@gmail.com" target="_top">Contact</a></li>
@@ -24,18 +26,25 @@
       </nav>
     </header>
 
+<!-- welcome section  -->
+    <section id="main" class="tab-content">
+      <h1>Welcome to my Portfolio. I'm Sandra, a Web Developer based in Portland, Oregon</h1>
+      <h2>Full-Stack Developer | Graphic Designer | Entrepreneur</h2>
+      <a class="contact-button" href="">CONTACT ME</a>
+    </section>
+
 <!-- jQuery Works template page -->
-      <section id="projects" class="tab-content">
-        <h1>Projects</h1>
-        <div class="work-container">
-            <article class="template">
-              <img class="image-show" src="">
-              <a href="#" class="title-link">Link</a>
-              <!-- <a href="#" class="title-link"><img class="image-show" src=""></a> -->
-              <div class="description">Description</div>
-            </article>
-          </div>
-      </section>
+    <section id="projects" class="tab-content">
+      <h1>Projects</h1>
+      <div class="work-container">
+          <article class="template">
+            <img class="image-show" src="">
+            <a href="#" class="title-link">Link</a>
+            <!-- <a href="#" class="title-link"><img class="image-show" src=""></a> -->
+            <div class="description">Description</div>
+          </article>
+      </div>
+    </section>
 
 <!-- about section -->
     <section id="about" class="tab-content">

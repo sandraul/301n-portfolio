@@ -27,6 +27,10 @@
   content: "\e900";
 }
 
+.icon-point-up:before {
+  content: "\ea03";
+}
+
 .icon-menu:before {
   content: "\e9bd";
 }

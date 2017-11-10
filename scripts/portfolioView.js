@@ -29,10 +29,10 @@ portfolioView.handleTabs = function() {
     console.log('showing ' + selectedSection);
     $('.tab-content').hide();
     $('#' + selectedSection).fadeIn(1000);
-    $('.icon-cross').click();
+    $('#').fadeIn(1000);
   });
   $('.tab-content').hide();
-  $('#projects').fadeIn(1000);
+  $('#main').fadeIn(1000);
 }
 
 

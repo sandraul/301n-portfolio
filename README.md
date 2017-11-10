@@ -52,4 +52,14 @@ Added two more work data examples
 
 Added mailto link on html contact tab
 Added clearfix for header
-Added function for event handlebars 
+Added function for event handlebars
+
+11/5
+
+Added html tag for projects section
+Added event function to show/hide sections
+Styled hamburguer menu and its list of items
+
+11/7
+
+Added handlebars script tag inside index.html
