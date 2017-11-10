@@ -83,3 +83,28 @@ article {
   float: right;
   width: 100%;
 }
+
+/*Tablet*/
+@media only screen and (min-width: 640px) {
+  .main-nav ul {
+    width: 100%;
+    display: inline-block;
+  }
+  .main-nav li {
+    display: inline-block;
+    margin-left: 50px;
+  }
+}
+
+/*Desktop*/
+@media only screen and (min-width: 960px) {
+  .main-nav ul {
+    width: 100%;
+    display: inline-block;
+  }
+
+  .main-nav li {
+    display: inline-block;
+    margin-left: 50px;
+  }
+}

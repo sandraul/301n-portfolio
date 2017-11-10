@@ -11,13 +11,15 @@ function Portfolio (portfolioData) {
 }
 
 Portfolio.prototype.toHTML = function() {
-  var $newPortofolio = $('.template').clone().removeClass('template');
+  // var $newPortofolio = $('.template').clone().removeClass('template');
+  var templateFiller = Handlebars.compile( $("#projects-template").html() );
 
-  $newPortofolio.find('.image-show').attr('src', this.image);
-  $newPortofolio.find('.title-link').text(this.title).attr('href', this.link);
-  $newPortofolio.find('.description').html(this.description);
+  // $newPortofolio.find('.image-show').attr('src', this.image);
+  // $newPortofolio.find('.title-link').text(this.title).attr('href', this.link);
+  // $newPortofolio.find('.description').html(this.description);
 
-return $newPortofolio;
+// return $newPortofolio;
+ return templateFiller(this);
 
 };
 

@@ -29,10 +29,15 @@ portfolioView.handleTabs = function() {
     console.log('showing ' + selectedSection);
     $('.tab-content').hide();
     $('#' + selectedSection).fadeIn(1000);
-    $('.icon-cross').click();
+
+    if ($('.icon-cross').css('display') !== 'none') {
+      $('.icon-cross').click(); //This hides the menu when clicking on a section
+    }
   });
+
+  //This shows the main section only on initial load
   $('.tab-content').hide();
-  $('#projects').fadeIn(1000);
+  $('#main').fadeIn(1000);
 }
 
 
