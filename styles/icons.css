@@ -23,16 +23,32 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-menu:before {
+  content: "\e9bd";
+}
+
+.icon-cross:before {
+  content: "\ea0f";
+}
+
 .icon-home:before {
   content: "\e900";
 }
 
-.icon-point-up:before {
-  content: "\ea03";
+.icon-user:before {
+  content: "\e971";
 }
 
-.icon-menu:before {
-  content: "\e9bd";
+.icon-cog:before {
+  content: "\e994";
+}
+
+.icon-images:before {
+  content: "\e90e";
+}
+
+.icon-envelop:before {
+  content: "\e945";
 }
 
 .icon-github:before {
@@ -41,8 +57,4 @@
 
 .icon-linkedin2:before {
   content: "\eaca";
-}
-
-.icon-cross:before {
-  content: "\ea0f";
 }

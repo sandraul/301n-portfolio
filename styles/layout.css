@@ -6,10 +6,22 @@
   clear: both;
 }*/
 
-@media only screen and (min-width: 640px) {
+@media only screen and (max-width: 640px) {
   .icon-menu {
     display: none;
   }
+}
+
+@media only screen and (min-width: 960px) {
+  .main-nav ul {
+    width: 100%;
+    display: inline-block;
+  }
+
+  .main-nav li {
+    display: inline-block;
+  }
+}
 
   /*.main-nav {
         width: 100%;
@@ -18,8 +30,3 @@
         border-radius:3px;
         background:#303030;
   }*/
-
-  .main-nav ul {
-    display: block;
-  }
-}

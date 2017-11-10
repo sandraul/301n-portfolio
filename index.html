@@ -5,9 +5,14 @@
     <title>Sandra Ultreras Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="styles/base.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700" rel="stylesheet">
+    <script id="projects-template" type="text/x-handlebars-template">
+      <article>
+        <img class="image-show" src="{{image}}">
+        <a href="{{link}}" class="title-link">{{title}}</a>
+        <div class="description">{{{description}}}</div>
+      </article>
+    </script>
   </head>
   <body>
     <header class="site-header clearfix">
@@ -16,10 +21,11 @@
         <div class="icon-menu"></div>
         <div class="icon-cross"></div>
         <ul>
-          <li class="tab" data-content="icon-home" ><a href="#"><i class="icon-point-up"></i></a>
-          <li class="tab" data-content="projects"><a href="#">Projects</a></li>
-          <li class="tab" data-content="about"><a href="#">About</a></li>
-          <li><a href="mailto:sandraultreras@gmail.com" target="_top">Contact</a></li>
+          <li class="tab" data-content="home" ><a href="#"><i class="icon-home"></i></a>
+          <li class="tab" data-content="about"><a href="#"></a><i class="icon-user"></i></li>
+          <li class="tab" data-content="skills"><a href="#"></a><i class="icon-cog"></i></li>
+          <li class="tab" data-content="projects"><a href="#"></a><i class="icon-images"></i></li>
+          <li><a href="mailto:sandraultreras@gmail.com" target="_top"></a><i class="icon-envelop"></i></li>
           <li><a href="https://github.com/sandraul" target="_blank"  class="icon-github"></a></li>
           <li><a href="https://www.linkedin.com/in/sandra-ultreras" target="_blank" class="icon-linkedin2"></a></li>
         </ul>
@@ -30,37 +36,44 @@
     <section id="main" class="tab-content">
       <h1>Welcome to my Portfolio. I'm Sandra, a Web Developer based in Portland, Oregon</h1>
       <h2>Full-Stack Developer | Graphic Designer | Entrepreneur</h2>
-      <a class="contact-button" href="">CONTACT ME</a>
-    </section>
-
-<!-- jQuery Works template page -->
-    <section id="projects" class="tab-content">
-      <h1>Projects</h1>
-      <div class="work-container">
-          <article class="template">
-            <img class="image-show" src="">
-            <a href="#" class="title-link">Link</a>
-            <!-- <a href="#" class="title-link"><img class="image-show" src=""></a> -->
-            <div class="description">Description</div>
-          </article>
-      </div>
+      <a class="contact-button" href="mailto:sandraultreras@gmail.com" target="_top">CONTACT ME</a>
     </section>
 
 <!-- about section -->
     <section id="about" class="tab-content">
-      <div id="about-container">
-        <h1>Bio:</h1>
-          <p>TEXTtextTexT TEXTtextTexT TEXTtextTexTTEXT
-            textTexTTEXTtextTexTTEXTtextTexT TEXTtextTexT </p>
-        <h1>Skills:</h1>
-          <p>TEXTtextTexT, TEXTtextTexT, TEXTtextTexT, TEXTtextTexT, TEXTtextTexT</p>
+          <div id="about-container">
+            <h1>About Me</h1>
+              <p>I grew up in Oaxaca, a relativly small city from Mexico.</p>
+            <h1>Skills:</h1>
+              <p>TEXTtextTexT, TEXTtextTexT, TEXTtextTexT, TEXTtextTexT, TEXTtextTexT</p>
+          </div>
+    </section>
+
+<!-- skills section-->
+    <section id="skills" class="tab-content">
+      <div class="skills-container">
+
+      </div>
+    </section>
+
+<!-- jQuery Works template section -->
+    <section id="projects" class="tab-content">
+      <h1>Projects</h1>
+      <div class="work-container">
+          <!-- <article>
+            <img class="image-show" src="">
+            <a href="#" class="title-link">Link</a>
+            <div class="description">Description</div>
+          </article> -->
       </div>
     </section>
 
 
-<script src="vendor/jquery-3.2.1.js"></script>
-<script src="scripts/portfolioData.js"></script>
-<script src="scripts/portfolio.js"></script>
-<script src="scripts/portfolioView.js"></script>
+    <script src="vendor/jquery-3.2.1.js"></script>
+    <script src="vendor/handlebars-v4.0.11.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script> -->
+    <script src="scripts/portfolioData.js"></script>
+    <script src="scripts/portfolio.js"></script>
+    <script src="scripts/portfolioView.js"></script>
   </body>
 </html>

@@ -63,3 +63,4 @@ Styled hamburguer menu and its list of items
 11/7
 
 Added handlebars script tag inside index.html
+Handlebars works
