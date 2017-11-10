@@ -64,3 +64,6 @@ Styled hamburguer menu and its list of items
 
 Added handlebars script tag inside index.html
 Handlebars works
+
+11/9
+Worked on media queries for tablet and desktop
