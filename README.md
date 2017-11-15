@@ -67,3 +67,7 @@ Handlebars works
 
 11/9
 Worked on media queries for tablet and desktop
+
+11/14
+Created JSON file for data
+Created loadAll() and fetchAll()

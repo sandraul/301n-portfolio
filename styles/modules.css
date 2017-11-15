@@ -24,6 +24,7 @@
    list-style: none;
    clear: both;
    font-size: 1.5em;
+   /*transition: all .3s ease-out;*/
  }
 
  .main-nav li {
@@ -38,6 +39,10 @@
    font-size: 25px;
    /*display: inline-block;*/
  }
+
+main .contact-button {
+
+}
 
 .image-show {
    width: 100%;
@@ -93,18 +98,35 @@ article {
   .main-nav li {
     display: inline-block;
     margin-left: 50px;
+    border-bottom: none;
   }
 }
 
 /*Desktop*/
 @media only screen and (min-width: 960px) {
-  .main-nav ul {
-    width: 100%;
+  header, main {
     display: inline-block;
+    height: 100vh;
+  }
+
+  main {
+    margin-left: 80px;
+    vertical-align: middle;
+  }
+
+  .main-nav {
+    /*display: flex;*/
+    /*flex-basis: 20px;*/
+    width: 20px;
+  }
+
+  .main-nav ul {
+    vertical-align: middle;
   }
 
   .main-nav li {
-    display: inline-block;
-    margin-left: 50px;
+    margin: 0;
+    padding: 10px 0px 10px 30px;
+    border-bottom: none;
   }
 }
