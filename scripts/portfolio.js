@@ -1,6 +1,5 @@
 'use strict';
 
-var allPortfolios = [];
 
 //Constructor Function
 function Portfolio (portfolioData) {
@@ -10,23 +9,30 @@ function Portfolio (portfolioData) {
   this.description = portfolioData.description;
 }
 
+Portfolio.all = [];
+
 Portfolio.prototype.toHTML = function() {
-  // var $newPortofolio = $('.template').clone().removeClass('template');
   var templateFiller = Handlebars.compile( $("#projects-template").html() );
-
-  // $newPortofolio.find('.image-show').attr('src', this.image);
-  // $newPortofolio.find('.title-link').text(this.title).attr('href', this.link);
-  // $newPortofolio.find('.description').html(this.description);
-
-// return $newPortofolio;
- return templateFiller(this);
-
+  return templateFiller(this);
 };
 
-portfolioData.forEach(function(eachItem) {
-  allPortfolios.push(new Portfolio(eachItem));
-});
 
-allPortfolios.forEach(function(port) {
-  $('.work-container').append(port.toHTML());
-});
+Portfolio.fetchAll = function() {
+  if (localStorage.portfolioData) {
+  Portfolio.loadAll(JSON.parse(localStorage.portfolioData));
+  portfolioView.initPage();
+  } else {
+  console.log("localStorage doesn't exist");
+  $.getJSON("/data/portfolioJSON.json", function(data) {
+    localStorage.setItem ('portfolioData', JSON.stringify(data));
+    Portfolio.loadAll(data);
+    portfolioView.initPage();
+    })
+  }
+};
+
+Portfolio.loadAll = function(projects) {
+  projects.forEach(function(project) {
+    Portfolio.all.push(new Portfolio(project));
+  })
+};

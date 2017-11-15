@@ -40,8 +40,16 @@ portfolioView.handleTabs = function() {
   $('#main').fadeIn(1000);
 }
 
+portfolioView.initPage = function() {
+  Portfolio.all.forEach(function(project) {
+    $('.work-container').append(project.toHTML())
+  });
+};
+
 
 $(document).ready(function() {
   portfolioView.handleMainNav();
   portfolioView.handleTabs();
+  Portfolio.fetchAll();
+
 })
