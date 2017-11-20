@@ -17,9 +17,12 @@
   <body>
     <header class="site-header clearfix">
       <nav class="main-nav">
-        <div id="logo"><a href="#" target="_self">SU</a></div>
-        <div class="icon-menu"></div>
-        <div class="icon-cross"></div>
+        <div class="logo-icons">
+          <div id="logo"><a href="#" target="_self">SU</a></div>
+          <div class="icon-menu"></div>
+          <div class="icon-cross"></div>
+        </div>
+      <div class="icon-list">
         <ul>
           <li class="tab" data-content="home" ><a href="#"><i class="icon-home"></i></a>
           <li class="tab" data-content="about"><a href="#"><i class="icon-user"></i></a></li>
@@ -29,12 +32,14 @@
           <li><a href="https://github.com/sandraul" target="_blank"  class="icon-github"></a></li>
           <li><a href="https://www.linkedin.com/in/sandra-ultreras" target="_blank" class="icon-linkedin2"></a></li>
         </ul>
+      </div>
+
       </nav>
     </header>
 
     <main>
 <!-- welcome section  -->
-    <section id="main" class="tab-content">
+    <section id="home" class="tab-content">
       <h1>Welcome to my Portfolio. I'm Sandra, a Web Developer based in Portland, Oregon</h1>
       <h2>Full-Stack Developer | Graphic Designer | Entrepreneur</h2>
       <a class="contact-button" href="mailto:sandraultreras@gmail.com" target="_top">CONTACT ME</a>
@@ -44,7 +49,8 @@
     <section id="about" class="tab-content">
           <div id="about-container">
             <h1>About Me</h1>
-              <p>I grew up in Oaxaca, a relativly small city from Mexico.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam finibus nisl lacus, id finibus est rhoncus eget. Morbi ipsum dolor, mollis lobortis efficitur in, luctus ac tellus. Morbi in magna tincidunt nisi venenatis congue. Nam ullamcorper pharetra eleifend. Sed rhoncus lectus non lectus convallis molestie. Morbi convallis semper magna faucibus accumsan. Integer tortor diam, convallis et facilisis eu, suscipit non sapien. Nullam ut porta sem, vitae vehicula eros.</p><br>
+              <p>Suspendisse condimentum quam nulla, in commodo purus posuere a. Phasellus ultrices nisi et enim hendrerit, sed mattis enim finibus. Curabitur consequat arcu quis odio bibendum, ut egestas erat tempor. Morbi ipsum orci, semper quis fermentum in, gravida a libero. Vestibulum sodales ultrices convallis. Integer porttitor quam a tincidunt venenatis. Nulla nisi sem, porta at mauris vitae, hendrerit fermentum leo. Vestibulum ultrices auctor ante, et tincidunt odio mollis ac. Cras condimentum efficitur pharetra.</p>
           </div>
     </section>
 
@@ -52,7 +58,12 @@
     <section id="skills" class="tab-content">
       <div class="skills-container">
         <h1>Skills:</h1>
-          <p>TEXTtextTexT, TEXTtextTexT, TEXTtextTexT, TEXTtextTexT, TEXTtextTexT</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam finibus nisl lacus, id finibus est rhoncus eget. Morbi ipsum dolor, mollis lobortis efficitur in, luctus ac tellus. </p>
+            <ul>
+              <li>Morbi in magna tincidunt nisi.</li>
+              <li>Nam ullamcorper pharetra eleifend.</li>
+              <li>Sed rhoncus lectus non lectus convallis molestie.</li>
+            </ul>
       </div>
     </section>
 
@@ -71,7 +82,6 @@
 
     <script src="vendor/jquery-3.2.1.js"></script>
     <script src="vendor/handlebars-v4.0.11.js"></script>
-    <script src="scripts/portfolioData.js"></script>
     <script src="scripts/portfolio.js"></script>
     <script src="scripts/portfolioView.js"></script>
   </body>
