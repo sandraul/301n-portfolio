@@ -3,20 +3,17 @@
 @import 'modules.css';
 
 body {
-  /*line-height: 1.5;*/
-  /*font-size: 100%;*/
   color: #EDE7D9;
   background-color: #1C373A;
-  /*margin: 0 auto;*/
-  /*width: 100%;*/
 }
 
 
 /*TEXT STYLES
 =======================================*/
 
-p {
+p, ul {
   font-size: 1em;
+  color: DarkKhaki;
 }
 
 /*LINK STYLES

@@ -75,3 +75,5 @@ Created loadAll() and fetchAll()
 11/16
 Setting up Server.js
 Created public folder to move all files inside
+
+11/19
